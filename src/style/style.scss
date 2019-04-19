@@ -1,4 +1,21 @@
-$culoare: gray;
+$alabaster: #fafafa;
+$mineShaft: #333333;
+$mercury: #e2e2e2;
+$gallery: #ededed;
+$emperor: #505050;
+$silverChalice: #9f9f9f;
+$outrageousOrange: #ff5d30;
+$alto: #DCDCDC;
+$dustyGray: #989898;
+$wildSand: #f4f4f4;
+$doveGray: #666666;
+$silver: #c8c8c8;
 
-@import "reset";
-@import "test";
+$widthMobile: 600px;
+$widthTablet: 1200px;
+
+@import 'reset';
+@import 'header';
+@import 'slider&qouteSection';
+@import 'main';
+@import 'footer';

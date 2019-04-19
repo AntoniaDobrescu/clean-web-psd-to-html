@@ -1,0 +1,243 @@
+.mainContainer {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.buttonMenu {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  @media (min-width: $widthMobile) {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.menuCloseButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+.toggleMenu {
+
+  @media (min-width: $widthTablet) {
+    display: none;
+  }
+}
+
+.toggleMenuNav {
+  display: none;
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  box-sizing: border-box;
+  transform: translateX(calc(-100% - 10px));
+  background: $silverChalice;
+  border-right: 1px solid $alabaster;
+  transition: transform .4s ease-in-out;
+
+  @media (min-width: 960px) and (max-width: 1199px) {
+    transform: translateY(-100%);
+  }
+}
+
+.isOpen {
+  display: block;
+  transform: translateX(0);
+
+  @media (min-width: 960px) and (max-width: 1199px) {
+    transform: translateY(0);
+  }
+}
+
+.toggleMenuItem {
+  margin: 10px 0;
+}
+
+.toggleMenuLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.5em;
+  color: $alabaster;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $gallery;
+
+  @media (min-width: $widthMobile) {
+
+  }
+
+  @media (min-width: $widthTablet) {
+    height: 65px;
+  }
+}
+
+.logoMobile {
+  font-size: 30px;
+  color: $emperor;
+
+  @media (min-width: $widthMobile) {
+    display: none;
+  }
+}
+
+.logo {
+  display: none;
+
+  @media (min-width: $widthMobile) {
+    display: block;
+    font-size: 36px;
+  }
+}
+
+.subtitle {
+  display: none;
+
+  @media (min-width: $widthTablet) {
+    display: block;
+    font-size: 13px;
+  }
+}
+
+.accountMenuList {
+  display: flex;
+}
+
+.accountMenuMobileItem {
+  display: none;
+  margin: 5px;
+  text-decoration: none;
+  position: relative;
+
+  @media (min-width: $widthMobile) {
+    display: inline;
+  }
+
+  &:after {
+    display: inline;
+    margin-left: 5px;
+    content: "|";
+  }
+
+  &:nth-child(2):after {
+    display: none;
+
+    @media (min-width: $widthMobile) {
+      display: inline;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.loginItem {
+  display: inline;
+}
+
+.loginItem::before {
+  background: $mineShaft;
+  width: 35px;
+  height: 22px;
+}
+
+.accountMenuMobileAnchor {
+  text-decoration: none;
+  color: $silverChalice;
+}
+
+.accountMenu {
+  display: flex;
+}
+
+.searchBar {
+  display: none;
+
+  @media (min-width: $widthTablet) {
+    display: block;
+    position: relative;
+    margin: 0 0 0 50px;
+  }
+}
+.searchBarInput {
+  border: none;
+  background: $silver;
+  padding: 0;
+  height: 25px;
+  border-radius: 50px;
+}
+
+.searchBarButton {
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  background: none;
+}
+
+.searchArrow {
+  background-color: $gallery;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas fa-chevron-circle-right {
+  color: $silver;
+}
+
+
+.menu {
+  display: none;
+
+  @media (min-width: $widthTablet) {
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.menuList {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menuAnchor {
+  text-decoration: none;
+  color: $doveGray;
+
+  &:hover {
+    color: $outrageousOrange;
+  }
+}
+
+.wrapperBlogAndTwitter {
+  @media (min-width: $widthMobile) {
+    display: flex;
+    flex-direction: row;
+  }
+}

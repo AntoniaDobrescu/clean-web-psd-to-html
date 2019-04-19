@@ -1,0 +1,151 @@
+.wrapperSocial {
+  background: $gallery;
+
+  @media (min-width: $widthTablet) {
+    display: flex;
+  }
+}
+
+.newsletterSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletterSection .sectionTitle {
+
+  @media (min-width: $widthTablet) {
+    align-self: flex-start;
+  }
+}
+
+.newsletterSection .text {
+  text-align: left;
+}
+
+.newsletterSection .searchBar {
+    display: block;
+    font-size: 13px;
+    margin-right: 10px;
+    padding: 10px 38px 10px 9px;
+    border-radius: 5px;
+    border: 1px $alto solid;
+    color: $dustyGray;
+    background-image: linear-gradient(to top left, $alto, $wildSand);
+    margin-left: 0;
+}
+
+.form .signUp {
+  font-size: 13px;
+  color: $outrageousOrange;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px $alto solid;
+  background-image: linear-gradient(to top left, $alto, $wildSand);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapperPlatform {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+.socialPlatform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $widthMobile) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $widthTablet) {
+    flex-basis: 50%;
+  }
+}
+
+.socialLogo {
+
+  @media (min-width: $widthMobile) {
+    margin-right: 10px;
+  }
+}
+
+.blogPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $widthMobile) {
+    align-items: flex-start;
+  }
+}
+
+.blogPost .postTitle {
+  margin-top: 10px;
+}
+
+.subtitle {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.blogPost .text {
+
+  @media (min-width: $widthMobile) {
+    text-align: left;
+  }
+}
+
+.blogPost .anchor {
+
+  @media (min-width: $widthMobile) {
+    align-self: flex-end;
+  }
+}
+
+.twitterSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $widthMobile) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.twitterSection .text {
+
+  @media (min-width: $widthMobile) {
+    text-align: left;
+  }
+}
+
+.twitterSection .anchor {
+
+  @media (min-width: $widthMobile) {
+    align-self: flex-end;
+  }
+}
+
+.copyrightSection {
+  background: $mercury;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0;
+
+  @media (min-width: $widthMobile) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

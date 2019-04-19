@@ -1,0 +1,82 @@
+.main {
+
+  @media (min-width: $widthTablet) {
+    display: flex;
+    margin-top: 50px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $widthMobile) {
+    align-items: flex-start;
+  }
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-style: oblique;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.text {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.aside .text {
+  max-width: 225px;
+}
+
+.boxPhoto {
+  width: 225px;
+  height: 140px;
+  background: $mineShaft;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoSize {
+  color: $alabaster;
+}
+
+.anchor {
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: $outrageousOrange;
+}
+
+.main .wrapper {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $widthTablet) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.main .text {
+
+  @media (min-width: $widthTablet) {
+    text-align: left;
+    max-width: 225px;
+    margin-top: 25px;
+  }
+}
+
+.aside {
+
+  @media (min-width: $widthMobile) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

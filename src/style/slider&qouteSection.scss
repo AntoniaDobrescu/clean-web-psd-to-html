@@ -1,0 +1,109 @@
+.photo {
+  background-color: $mineShaft;
+  border: 10px $mercury solid;
+  border-radius: 50%;
+
+  @media (min-width: $widthTablet) {
+    border: 20px $mercury solid;
+  }
+}
+
+.front {
+  height: 170px;
+  width: 170px;
+
+  @media (min-width: $widthMobile) {
+    height: 220px;
+    width: 220px;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (min-width: $widthTablet) {
+    height: 380px;
+    width: 380px;
+  }
+}
+
+.right {
+  display: none;
+
+  @media (min-width: $widthMobile) {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px $mercury solid;
+    position: relative;
+    left: -40px;
+    bottom: 10px;
+    z-index: 1;
+  }
+
+  @media (min-width: $widthTablet) {
+    border: 20px $mercury solid;
+    width: 275px;
+    height: 275px;
+    left: -70px;
+    bottom: 30px;
+  }
+}
+
+.left {
+  display: none;
+
+  @media (min-width: $widthMobile) {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px $mercury solid;
+    position: relative;
+    right: -40px;
+    bottom: 10px;
+    z-index: 1;
+  }
+
+  @media (min-width: $widthTablet) {
+    border: 20px $mercury solid;
+    width: 275px;
+    height: 275px;
+    right: -70px;
+    bottom: 30px;
+  }
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.gradientLine {
+  display: block;
+  border: none;
+  color: white;
+  height: 2px;
+  background: $alto;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from($alto), to($alabaster));
+
+  @media (min-width: $widthMobile) {
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from($alto), to($alabaster));
+  }
+}
+
+.qoute {
+  font-size: 14px;
+  margin: 10px;
+  text-align: center;
+
+  @media(min-width: $widthMobile) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $widthTablet) {
+    font-size: 22px;
+  }
+
+}
+
